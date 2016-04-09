@@ -758,7 +758,7 @@ $('#leftpane').prepend('<div id="playlist_added" class="col-lg-12 col-md-12" sty
 function changeMediaFunc() {
 var added_by = $('.queue_active').attr('title');
 var title2 = $('.queue_active').find( $(".qe_title") ).text();
-var new_title = 'аЁаЕаЙбаАб: ' + title2 + ' (' + added_by + ')';
+var new_title = 'Сейчас: ' + title2 + ' (' + added_by + ')';
 if ( $('#currenttitle').text() != new_title && typeof added_by !== 'undefined') { $('#currenttitle').html(new_title); }
 
 //next
@@ -1220,7 +1220,7 @@ chatflair = $('<span id="chatflair" class="label label-success pull-right pointe
 		CHATFUNC = false;
 	}
   });
-afkbtn = $('<span id="afk-btn" class="label label-default pull-right pointer">абаК</span>')
+afkbtn = $('<span id="afk-btn" class="label label-default pull-right pointer">/afk</span>')
 		  .insertAfter("#adminflair")
 		  .on("click", function() {
 			socket.emit("chatMsg", {msg: '/afk'});
