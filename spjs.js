@@ -742,15 +742,6 @@ modmenu(username, event);
 
 
 
-insertNick = function(text){$c=$('#chatline');$c.val(text+$c.val());$c.focus();};
-$('#messagebuffer').on('click','.username',function(){insertNick($(this).text());})
-$('#messagebuffer').on('click','.action',function(){
-var t1 = $(this).text();
-var first = t1.split(' ', 1);
-var first2 = first[0] + ": ";
-insertNick(first2);
-})
-
 $('#leftpane').prepend('<div id="chatcommands" class="col-lg-12 col-md-12" style="display: none;"><div class="well poll-menu"><button class="btn btn-sm btn-danger pull-right" onclick="ShowHideID(\'chatcommands\');">Закрыть</button><h3>Список команд</h3><h6>Базовые:</h6><p><code>/me</code>  - написать о себе в третьем лице.<br><code>/afk</code> – переход в режим отсутствия (AFK) или выход из него.<br><code>/sp</code>– помещает ваше сообщение под спойлер.<h6>Дополнительные</h6><code>!skip</code>  - проголосовать за пропуск текущего видео.<br><code>!time</code> - показать локальное время.<br><code>!inba</code> - PARTY TIIIME.</p><h6>Чат-бот:</h6><p><code>!q</code> - показать случайную цитату.<br><code>!qchat</code>  – показать случайную цитату участников чата. Можно использовать совместно с логином участника чата, например, <code>!qchat username</code>.<br><code>!ask</code> - спросить о чём-то робота.<br><code>!pick arg1,arg2</code>  – выбирает между несколькими элементами текста, которые разделены запятой.<br><code>!dice</code> - кинуть кубик (число от 1 до 6).<br><code>!roll</code> - крутилка (числа от 1 до 999).<br><code>!translate [en>ru] Text</code> –  переводит текст сообщения с языка A на язык B.</p><h6>Форматирование текста:</h6><p><code>__text__</code> -  <em>курсив</em>.<br><code>*text*</code> -  <b>жирный шрифт</b>.<br><code>`text`</code> - код, моноширный текст.<br><code>~~text~~</code> - <strike>зачёркнутый текст</strike>.</p></div></div>');
 $('#leftpane').prepend('<div id="playlist_added" class="col-lg-12 col-md-12" style="display: none;"><div class="well poll-menu"><button class="btn btn-sm btn-danger pull-right" onclick="ShowHideID(\'playlist_added\');">Закрыть</button><h3>Кто засрал плейлист?</h3><div id="added_userlist">ааОаЛббаАаЕаМ баПаИбаОаК...</div></div></div>');
 
