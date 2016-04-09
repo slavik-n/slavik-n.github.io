@@ -574,7 +574,7 @@ function inba() {
                 var smilesArray = window.CHANNEL.emotes.map(function (smile) {
                     return smile.name;
                 });
-socket.emit("chatMsg", { msg: "тЅ dance", meta: meta}); 
+socket.emit("chatMsg", { msg: "dance", meta: meta}); 
                 return smilesArray[Math.floor(Math.random() * smilesArray.length)] + ' ';
             }
 inba();
