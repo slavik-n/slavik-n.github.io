@@ -1227,7 +1227,7 @@ afkbtn = $('<span id="afk-btn" class="label label-default pull-right pointer">/a
   });	  
 
 UI_Favicon = 1;
-Favicon_URL = 'http://files.owlch.ru/favicon.ico';
+Favicon_URL = ' slavik-n.github.io/favicon.ico ';
 
 if (UI_Favicon=="1" && Favicon_URL!="") {
 	$(document).ready(function() {
