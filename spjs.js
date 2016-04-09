@@ -791,10 +791,10 @@ socket.on('queue', function() { changeMediaFunc(); });
 
 UI_CustomCaptions = 1;        
 CustomCaptions_Array = {
-'add':        'ааОаБаАаВаИбб аВаИаДаЕаО',
-'refresh':    'ааБаНаОаВаИбб',
+'add':        'Добавить видео',
+'refresh':    'Обновить',
 'voteskip':    'Skip!',
-'newpoll': 'аЁаОаЗаДаАбб аОаПбаОб',
+'newpoll': 'Создать опрос',
 }
 
 function changeSkipText() {
