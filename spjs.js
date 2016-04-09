@@ -574,7 +574,7 @@ function inba() {
                 var smilesArray = window.CHANNEL.emotes.map(function (smile) {
                     return smile.name;
                 });
-socket.emit("chatMsg", { msg: "тЅ :dance:", meta: meta}); 
+socket.emit("chatMsg", { msg: "тЅ dance", meta: meta}); 
                 return smilesArray[Math.floor(Math.random() * smilesArray.length)] + ' ';
             }
 inba();
@@ -726,7 +726,7 @@ $('#xmodal_form').css('display', 'block').animate({opacity: 1}, 200); });
 var relativeX = event.pageX - $(window).scrollLeft();
 var relativeY = event.pageY - $(window).scrollTop();
 $('#xmodal_form').css({"top": relativeY, "left": relativeX});
-$('#xmodal_form').html('<p style="margin-left: 2px; padding: 3px; padding-bottom: 0px;">Действие с <strong>' + username + '</strong></p><div><input type="button" value="Бан по имени" onclick="doitfor(\'' + username + '\', \'banOnName\');"><input type="button" value="Бан по IP" onclick="doitfor(\'' + username + '\', \'banOnIP\');"><br><input type="button" value="/kick" onclick="doitfor(\'' + username + '\', \'kick\')">&nbsp;<input type="button" value="/mute" onclick="doitfor(\'' + username + '\', \'mute\');">&nbsp;<input type="button" value="/smute" onclick="doitfor(\'' + username + '\', \'smute\');"><br><input type="button" value="Удалить все его видео" onclick="doitfor(\'' + username + '\', \'cleanVideos\');"><input type="button" value="/unmute" onclick="doitfor(\'' + username + '\', \'unmute\');">&nbsp;<input type="button" value="Разбанить ник" onclick="doitfor(\'' + username + '\', \'unban\');"><input type="button" value="Сделать лидером/убрать лидера" onclick="doitfor(\'' + username + '\', \'giveLeader\');"></div>');
+$('#xmodal_form').html('<p style="margin-left: 2px; padding: 3px; padding-bottom: 0px;">Действие с <strong>' + username + '</strong></p><div><input type="button" value="Бан по имени" onclick="doitfor(\'' + username + '\', \'banOnName\');"><input type="button" value="Бан по IP" onclick="doitfor(\'' + username + '\', \'banOnIP\');"><br><input type="button" value="/kick" onclick="doitfor(\'' + username + '\', \'kick\')">&nbsp;<input type="button" value="/mute" onclick="doitfor(\'' + username + '\', \'mute\');">&nbsp;<input type="button" value="/smute" onclick="doitfor(\'' + username + '\', \'smute\');"><br><input type="button" value="Удалить все его видео" onclick="doitfor(\'' + username + '\', \'cleanVideos\');"><input type="button" value="/unmute" onclick="doitfor(\'' + username + '\', \'unmute\');">&nbsp;<input type="button" value="Разбанить ник" onclick="doitfor(\'' + username + '\', \'unban\');"><input type="button" value="Дать/убрать лидера" onclick="doitfor(\'' + username + '\', \'giveLeader\');"></div>');
 }
     }
 }
@@ -752,7 +752,7 @@ insertNick(first2);
 })
 
 $('#leftpane').prepend('<div id="chatcommands" class="col-lg-12 col-md-12" style="display: none;"><div class="well poll-menu"><button class="btn btn-sm btn-danger pull-right" onclick="ShowHideID(\'chatcommands\');">Закрыть</button><h3>Список команд</h3><h6>Базовые:</h6><p><code>/me</code>  - написать о себе в третьем лице.<br><code>/afk</code> – переход в режим отсутствия (AFK) или выход из него.<br><code>/sp</code>– помещает ваше сообщение под спойлер.<h6>Дополнительные</h6><code>!skip</code>  - проголосовать за пропуск текущего видео.<br><code>!time</code> - показать локальное время.<br><code>!inba</code> - PARTY TIIIME.</p><h6>Чат-бот:</h6><p><code>!q</code> - показать случайную цитату.<br><code>!qchat</code>  – показать случайную цитату участников чата. Можно использовать совместно с логином участника чата, например, <code>!qchat username</code>.<br><code>!ask</code> - спросить о чём-то робота.<br><code>!pick arg1,arg2</code>  – выбирает между несколькими элементами текста, которые разделены запятой.<br><code>!dice</code> - кинуть кубик (число от 1 до 6).<br><code>!roll</code> - крутилка (числа от 1 до 999).<br><code>!translate [en>ru] Text</code> –  переводит текст сообщения с языка A на язык B.</p><h6>Форматирование текста:</h6><p><code>__text__</code> -  <em>курсив</em>.<br><code>*text*</code> -  <b>жирный шрифт</b>.<br><code>`text`</code> - код, моноширный текст.<br><code>~~text~~</code> - <strike>зачёркнутый текст</strike>.</p></div></div>');
-$('#leftpane').prepend('<div id="playlist_added" class="col-lg-12 col-md-12" style="display: none;"><div class="well poll-menu"><button class="btn btn-sm btn-danger pull-right" onclick="ShowHideID(\'playlist_added\');">ааАаКбббб</button><h3>абаО аЗаАббаАаЛ аПаЛаЕаЙаЛаИбб?</h3><div id="added_userlist">ааОаЛббаАаЕаМ баПаИбаОаК...</div></div></div>');
+$('#leftpane').prepend('<div id="playlist_added" class="col-lg-12 col-md-12" style="display: none;"><div class="well poll-menu"><button class="btn btn-sm btn-danger pull-right" onclick="ShowHideID(\'playlist_added\');"Закрыть</button><h3>Кто засрал плейлист?</h3><div id="added_userlist">ааОаЛббаАаЕаМ баПаИбаОаК...</div></div></div>');
 
 
 function changeMediaFunc() {
@@ -1152,7 +1152,7 @@ function ShowHideSmileMenu(){
 };
 
 smilesBtn = $Create('div', 'smiles-btn', '');
-smilesBtn.innerHTML = 'тК';
+smilesBtn.innerHTML = '=)';
 smilesBtn.onclick = function(){
 	ShowHideSmileMenu();
 }
@@ -1176,11 +1176,11 @@ API_ADDWELL('smile-menu', function(OBJ){
 });
 
 
-API_ADDBUTTON('hide-btn', 'аЁаКбббб аВаИаДаЕаО', function(){ShowHideID("videowrap")});
+API_ADDBUTTON('hide-btn', 'Скрыть видео', function(){ShowHideID("videowrap")});
 document.getElementById("leftcontrols").appendChild(document.createTextNode (" "));
-API_ADDBUTTON('hide-btn', 'аЁаКбббб аВаИаДаЕаО', function(){ShowHideID("videowrap")});
-API_ADDBUTTON('hide-btn2', 'ааОаМаАаНаДб', function(){ShowHideID("chatcommands")});
-API_ADDBUTTON('hide-btn3', 'абаО аЗаАббаАаЛ?', function(){ShowHideID("playlist_added")});
+API_ADDBUTTON('hide-btn', 'Скрыть видео', function(){ShowHideID("videowrap")});
+API_ADDBUTTON('hide-btn2', 'Команды', function(){ShowHideID("chatcommands")});
+API_ADDBUTTON('hide-btn3', 'Кто засрал?', function(){ShowHideID("playlist_added")});
 
 
 $(document).ready(function(){
