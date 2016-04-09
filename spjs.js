@@ -1143,7 +1143,7 @@ function ShowHideSmileMenu(){
 };
 
 smilesBtn = $Create('div', 'smiles-btn', '');
-smilesBtn.innerHTML = '=)';
+smilesBtn.innerHTML = '<img src="http://i.imgur.com/kajV9VF.png" height="13" weight="13"/>';
 smilesBtn.onclick = function(){
 	ShowHideSmileMenu();
 }
