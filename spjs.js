@@ -1218,7 +1218,7 @@ afkbtn = $('<span id="afk-btn" class="label label-default pull-right pointer">/a
   });	  
 
 UI_Favicon = 1;
-Favicon_URL = 'https://slavik-n.github.io/favicon.ico';
+Favicon_URL = 'https://slavik-n.github.io/favicon%281%29.ico';
 
 if (UI_Favicon=="1" && Favicon_URL!="") {
 	$(document).ready(function() {
