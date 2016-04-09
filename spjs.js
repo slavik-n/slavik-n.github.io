@@ -1111,7 +1111,7 @@ function ShowHideID(ID){
 STYLE = $Add('style', 'API_STYLE', '', '@body');
 STYLE.innerHTML += '.chat-image{max-width: 100px; max-height:100px; cursor: pointer;}';
 STYLE.innerHTML += '.smile, #plmeta{cursor: pointer;}';
-STYLE.innerHTML += '#help-btn, #image-btn, #smiles-btn{margin-right: 15px;}';
+STYLE.innerHTML += '#help-btn, #image-btn, #smiles-btn{margin-right: 10px;}';
 STYLE.innerHTML += '#smiles-btn{cursor: pointer; position: absolute; font-size: 25px; right: 10px;}';
 STYLE.innerHTML += '#chatwrap{overflow: auto;}';
 
