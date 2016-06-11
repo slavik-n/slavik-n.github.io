@@ -544,15 +544,15 @@ meta.modflair = CLIENT.rank;
 socket.emit("chatMsg", {msg: msg, meta: meta});
 if (msg == "!skip") {
 if (CHANNEL.opts.allow_voteskip === true) {
-socket.emit("voteskip"); socket.emit("chatMsg", {msg: "тЅ абаДаАаН аГаОаЛаОб аЗаА аПбаОаПббаК аВаИаДаЕаО", meta: meta}); 
+socket.emit("voteskip"); socket.emit("chatMsg", {msg: "Отдан голос за пропуск видео", meta: meta}); 
 } else {
-socket.emit("chatMsg", {msg: "тЅ аЁаКаИаПаЛаОаК аАаКбаИаВаИбаОаВаАаН. ааЕаЙббаВаИаЕ аНаЕаВаОаЗаМаОаЖаНаО.", meta: meta});
+socket.emit("chatMsg", {msg: "Проголосовать за пропуск невозможно", meta: meta});
 }
 
 }
 else if (msg == "!time") { date = new Date(); 
 var min = ("0" + date.getMinutes()).substr(-2);
-socket.emit("chatMsg", { msg: "тЅ аЂаЕаКббаЕаЕ аВбаЕаМб: " + date.getHours() + ":" + min, meta: meta}); }
+socket.emit("chatMsg", { msg: "Текущее время: " + date.getHours() + ":" + min, meta: meta}); }
 else if (msg == "!inba") {
 function inba() {
                 var IMBA = new Audio("http://files.owlch.ru/inba.ogg");
