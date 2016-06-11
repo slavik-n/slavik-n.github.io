@@ -544,9 +544,9 @@ meta.modflair = CLIENT.rank;
 socket.emit("chatMsg", {msg: msg, meta: meta});
 if (msg == "!skip") {
 if (CHANNEL.opts.allow_voteskip === true) {
-socket.emit("voteskip"); socket.emit("chatMsg", {msg: "Отдан голос за пропуск видео", meta: meta}); 
+socket.emit("voteskip"); socket.emit("chatMsg", {msg: "----Отдан голос за пропуск видео", meta: meta}); 
 } else {
-socket.emit("chatMsg", {msg: "Проголосовать за пропуск невозможно", meta: meta});
+socket.emit("chatMsg", {msg: "----Проголосовать за пропуск невозможно", meta: meta});
 }
 
 }
